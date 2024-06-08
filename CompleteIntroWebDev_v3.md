@@ -2,7 +2,7 @@
 
 Calvin Wetzel
 
-## HTML
+## HTML -> Content of Webpage
 
 ### Tags
 
@@ -180,3 +180,12 @@ Calvin Wetzel
 - **class** - can be applied to nearly all tags; classes are more useful than IDs; class is reusable across takes and several can be applied to given tag
 - **id** - less useful than tags; they are design to not be reusable; unique to a page; only use if you want to make something unique
 
+### Organizing HTML
+
+- Keep everything together (break it up into "boxes") with a `div`
+  - Could also use `<article></article>` tag; no difference with `div`; basically a cardbox with a label; no functional difference
+  - Overall, `div` are used to organize html into blocks
+- `href` attribute can be absolute link to like google.com or relative to the base URL (another HTML page in folder)
+- Add `class` with name to each tag to give context to tag's purpose/what it represents e.g. "social-post", "user-name", "social-post-text", etc.
+- Optimize for the "forever" part/maintenance of code; not for ease of initial writing part; will save you time, trouble, and money down the road!
+- `nav` - used to help with navigation; think nav bar; contains links to other parts of website; "/" goes up to root/home; "/about" goes up to root/home then down one to about page, "home" down to home from where you are currently at; think of it as moving through directories in terminal
