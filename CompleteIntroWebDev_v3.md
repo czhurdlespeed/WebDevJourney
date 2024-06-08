@@ -199,3 +199,4 @@ Calvin Wetzel
 - `<meta>` - meta tags for various info that goes in `<head></head>`; _self closing_
 - `<body></body>` - all visible HTML goes here e.g. divs, spans, tables, h1s, etc.
 - Don't memorize this; use **vscode** shortcut `html:5 + Tab` and it will generate this template automatically for you
+- Use `lorem(# of words)` to generate latin filler text e.g. `lorem40`
