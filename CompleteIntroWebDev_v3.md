@@ -160,3 +160,23 @@ Calvin Wetzel
 
 - **comments** - `<!-- your comments go here --->`
 
+### Attributes
+
+- **Attributes** allow you to modify behavior of an HTML attritbue such as specifying type of input; key="value" pairs
+
+```html
+<!-- The default, if you leave off the type you get the "text" type -->
+<input type="text" />
+
+<input type="color" />
+<input type="file" />
+<input type="number" />
+<input type="datetime-local" />
+<input type="radio" />
+<input type="checkbox" />
+```
+
+- **href** and **type** are specific to a few tags
+- **class** - can be applied to nearly all tags; classes are more useful than IDs; class is reusable across takes and several can be applied to given tag
+- **id** - less useful than tags; they are design to not be reusable; unique to a page; only use if you want to make something unique
+
