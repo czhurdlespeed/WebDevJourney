@@ -189,3 +189,13 @@ Calvin Wetzel
 - Add `class` with name to each tag to give context to tag's purpose/what it represents e.g. "social-post", "user-name", "social-post-text", etc.
 - Optimize for the "forever" part/maintenance of code; not for ease of initial writing part; will save you time, trouble, and money down the road!
 - `nav` - used to help with navigation; think nav bar; contains links to other parts of website; "/" goes up to root/home; "/about" goes up to root/home then down one to about page, "home" down to home from where you are currently at; think of it as moving through directories in terminal
+
+### Head and Meta Tags
+
+- `index.html` - root file of a website
+- `<!DOCTYPE html>`` - signal to browser using latest version of html
+- `<html lang="en"></html>` - abosulte most root tag of an HTML document; encapsulates everything in document
+- `<head></head>` - only stores meta data such as char sets to use, how to handle browser resizings, title that appears in browser tab, what the favicon (little logo) is, where CSS is located, etc.
+- `<meta>` - meta tags for various info that goes in `<head></head>`; _self closing_
+- `<body></body>` - all visible HTML goes here e.g. divs, spans, tables, h1s, etc.
+- Don't memorize this; use **vscode** shortcut `html:5 + Tab` and it will generate this template automatically for you
