@@ -331,3 +331,93 @@ Calvin Wetzel
 - `align_items` - worries about vertical alignment
 - `flex` - _makes laying out items so much easier_
 - See [More Flex](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) for more info on flexbox
+
+### Grid
+
+- Good for laying out pages in grid-like pattern
+- Use [Can I Use](https://caniuse.com/ciu/about) - provides up-to-date browser support tables for support of front-end web technologies on desktop and mobile web browsers
+
+```html
+<style>
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 10px;
+    column-gap: 10px;
+  }
+
+  .grid-picture {
+    margin: 0;
+    padding: 0;
+  }
+</style>
+
+<div class="grid">
+  <img
+       class="grid-picture"
+       src="http://pets-images.dev-apis.com/pets/dog25.jpg"
+       alt="a doggy"
+       />
+  <img
+       class="grid-picture"
+       src="http://pets-images.dev-apis.com/pets/dog26.jpg"
+       alt="a doggy"
+       />
+  <img
+       class="grid-picture"
+       src="http://pets-images.dev-apis.com/pets/dog27.jpg"
+       alt="a doggy"
+       />
+  <img
+       class="grid-picture"
+       src="http://pets-images.dev-apis.com/pets/dog28.jpg"
+       alt="a doggy"
+       />
+</div>
+```
+
+- **Another Example**
+
+```html
+<style>
+  .my-page-header {
+    grid-area: nav-header;
+    background-color: red;
+    padding: 10px;
+  }
+
+  .my-page-body {
+    grid-area: main-body;
+    background-color: blue;
+    padding: 10px;
+  }
+
+  .my-page-sidebar {
+    grid-area: nav-side;
+    background-color: green;
+    padding: 10px;
+  }
+
+  .my-page-footer {
+    grid-area: footer;
+    background-color: yellow;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+  }
+
+  .my-page {
+    display: grid;
+    grid-template-areas:
+      "nav-header  nav-header  nav-header  nav-side"
+      "main-body   main-body   .           nav-side"
+      "footer      footer      footer      footer";
+  }
+</style>
+<div class="my-page">
+  <header class="my-page-header">the header</header>
+  <div class="my-page-body">the body</div>
+  <div class="my-page-sidebar">the sidebar</div>
+  <footer class="my-page-footer">the footer</footer>
+</div>
+```
