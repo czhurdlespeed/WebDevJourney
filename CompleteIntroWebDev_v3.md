@@ -331,4 +331,3 @@ Calvin Wetzel
 - `align_items` - worries about vertical alignment
 - `flex` - _makes laying out items so much easier_
 - See [More Flex](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) for more info on flexbox
-
