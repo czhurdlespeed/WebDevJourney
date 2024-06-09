@@ -3,6 +3,7 @@
 Calvin Wetzel
 
 [Complete Intro to Web Dev v3](https://btholt.github.io/complete-intro-to-web-dev-v3/)
+
 ## HTML -> Content of Webpage
 
 ### Tags
@@ -92,7 +93,7 @@ Calvin Wetzel
 
 - **img** - an _Image_; in html it's apart from the content; in CSS it's for background image/decoration for website; _self closing_ `<img />`; alt text as well
   - Image Formats
-    - **JPG** - good for handling large color paletts without increasing file size but they don't allow for transparent pixels (think logos). 
+    - **JPG** - good for handling large color paletts without increasing file size but they don't allow for transparent pixels (think logos).
       - Great for Photos and Images with lots of gradients
     - **GIF** - go-to option for simple animations but limited in terms of color palette
       - Great for Animations
@@ -249,7 +250,7 @@ Calvin Wetzel
 <h1 class="blog-post-title">My Cool Blog Post</h1>
 ```
 
-- Conflicts are resolved on a property-by-property basis; if same property applied, the last one referenced in CSS is applied. 
+- Conflicts are resolved on a property-by-property basis; if same property applied, the last one referenced in CSS is applied.
 - **A class is considered more specific than a tag**...so it wins out if conflict occurs
 - **IDs** - are more specific than both classes and tags; `#site-brand`
 
@@ -271,4 +272,40 @@ Calvin Wetzel
   The Brand of my Website
 </h1>
 ```
+
+- Levels of Specificity
+  - 1) Inline Style
+  - 2) `!important`
+  - 3) IDs
+  - 4) Classes
+  - 5) Tags
+
+- Pre-build CSS --> [GetBootstrap](https://getbootstrap.com/)
+- Always load your CSS last so that it is referenced last (wins in conflicts)
+
+### Pseudoclasses and Pseudoelements
+
+- Want to do somethings conditionally -> for example, change if mouse hovers over something
+- Use `:` after a class and then write the pseudoclasses
+- Use to add flavor to website but don't use for core functionality
+
+```html
+<style>
+  .hover-example {
+    width: 100px;
+    height: 100px;
+    background-color: limegreen;
+    color: white;
+  }
+  .hover-example:select {
+    background-color: crimson;
+    width: 150px;
+    height: 150px;
+  }
+</style>
+<div class="hover-example">Hover your mouse over me</div>
+```
+
+- Pseudoelements - `::before` and `::after`
+- [Pseudoclasses Exmaple](https://css-tricks.com/pseudo-class-selectors/)
 
