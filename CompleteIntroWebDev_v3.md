@@ -309,3 +309,26 @@ Calvin Wetzel
 - Pseudoelements - `::before` and `::after`
 - [Pseudoclasses Exmaple](https://css-tricks.com/pseudo-class-selectors/)
 
+### Layout CSS
+
+- **Box Model**
+  - Every tag has a display property
+  - `inline` - makes tag behave like text; can't change height, width, padding, margins, etc. Browser makes those decisions and you can't change them
+  - `block` - default display for divs and ps; gives control over height, width, padding, margins, etc.
+  - several more...
+- Include boarder-box in every CSS file; makes pixel dimension math much easier
+
+```css
+* {
+  box-sizing: border-box;
+}
+```
+
+### Flex
+
+- `display: flex;` - display mode; allows you to change the layout inside the tag; changes layout of its children; same with `display: float;` except float wraps while flex squishes
+- `justify-content` - worries about horizontal justification
+- `align_items` - worries about vertical alignment
+- `flex` - _makes laying out items so much easier_
+- See [More Flex](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) for more info on flexbox
+
