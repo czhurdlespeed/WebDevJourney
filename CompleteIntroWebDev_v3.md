@@ -2,6 +2,7 @@
 
 Calvin Wetzel
 
+[Complete Intro to Web Dev v3](https://btholt.github.io/complete-intro-to-web-dev-v3/)
 ## HTML -> Content of Webpage
 
 ### Tags
@@ -42,7 +43,12 @@ Calvin Wetzel
 </p>
 ```
 
-- **a** - _Anchor_: link to somewhere else
+- **a** - _Anchor_: link to somewhere else; can be internal or external link
+  - Use `target="_blank"` to have link open in new tab
+  - Use `rel="noopener"` to prevent open link from getting access to website; prevents phishing attacks
+  - Use `rel="noreferrer"` to prevent link from knowing your website refers to it; better long term security
+  - **Note**: most web browers achieve these `rel` attributes automatically
+  - `./` start looking relative to current page; _relative links_
 
 ```html
 <a href="https://www.frontendmasters.com">Frontend Masters</a>
@@ -85,6 +91,15 @@ Calvin Wetzel
 ```
 
 - **img** - an _Image_; in html it's apart from the content; in CSS it's for background image/decoration for website; _self closing_ `<img />`; alt text as well
+  - Image Formats
+    - **JPG** - good for handling large color paletts without increasing file size but they don't allow for transparent pixels (think logos). 
+      - Great for Photos and Images with lots of gradients
+    - **GIF** - go-to option for simple animations but limited in terms of color palette
+      - Great for Animations
+    - **PNG** - generally larger file size to achieve same quality as _JPG_. However, they deal with opacity really well; no color palette limitations
+      - Great for icons, technical diagrams, and logos
+    - **SVG** - vetor-based graphics; scale up or down to any dimension without loss of quality
+      - Great for responsive design (use on all devices (phones, tablets, displays of different sizes) without have to maintain different websites; just differnt css layouts); use whenever you can
 
 ```html
 <img
@@ -200,3 +215,60 @@ Calvin Wetzel
 - `<body></body>` - all visible HTML goes here e.g. divs, spans, tables, h1s, etc.
 - Don't memorize this; use **vscode** shortcut `html:5 + Tab` and it will generate this template automatically for you
 - Use `lorem(# of words)` to generate latin filler text e.g. `lorem40`
+
+## CSS -> Styling of Webpage
+
+### Rules
+
+- **selector** - everything inside the `{}` is applied to it; it applies to everything that matches the selector
+- **property** - `color:`; ~350 of them
+- **value** - identifies value of the property; `property:value;` ; each pair ends with a semicolon
+- If the selector value is also a parent to another HTML tag, that child will also be effected by the selector
+
+### Selectors and the Cascade
+
+- **classes** - allow us to style the same tags (p, div, span, h, etc.) differently; select the class instead of the tag
+  - Therefore, it is important to have useful, identifying class names
+  - _Name classes after what they are, not what they look like_
+  - Tag selectors are just the tag such as `h1`, `div`, etc.
+  - Class selectors are prefixed by a period such as `.branding`, `.blog-post-title`, etc.
+  - _Use classes_ ...best way to style web pages.
+- `<style></style>` surrounds all css within an html document
+
+```html
+<style>
+  .branding {
+    color: red;
+  }
+
+  .blog-post-title {
+    color: limegreen;
+  }
+</style>
+<h1 class="branding">My Super Cool Brand</h1>
+<h1 class="blog-post-title">My Cool Blog Post</h1>
+```
+
+- Conflicts are resolved on a property-by-property basis; if same property applied, the last one referenced in CSS is applied. 
+- **A class is considered more specific than a tag**...so it wins out if conflict occurs
+- **IDs** - are more specific than both classes and tags; `#site-brand`
+
+```html
+<style type="text/css">
+  #site-brand {
+    color: red;
+  }
+
+  h1.nav-head.nav-main.other-useful-class {
+    /*
+     * this class is way too specific; never have a class selector so long
+     * it's ridiculous and just to illustrate a point
+     */
+    color: green;
+  }
+</style>
+<h1 id="site-brand" class="nav-head nav-main other-useful-class">
+  The Brand of my Website
+</h1>
+```
+
