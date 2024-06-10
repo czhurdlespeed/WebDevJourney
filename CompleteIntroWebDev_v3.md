@@ -421,3 +421,12 @@ Calvin Wetzel
   <footer class="my-page-footer">the footer</footer>
 </div>
 ```
+
+### Animations
+
+- `@keyframes` - allows you to define a reusable animation; for example, `@keyframes spin { ...}`
+  - you can then use `spin` as the defined animation for the `animation` property; name doesn't have to be spin; can be any name
+  - [More info](https://developer.mozilla.org/en-US/docs/Web/CSS/easing-function)
+- Various animation-timing-function are avaiable; you can make your timing custom by using `cubic-bezier()`
+  - [More info](https://developer.mozilla.org/en-US/docs/Web/CSS/easing-function)
+- Can do animations with color as well
