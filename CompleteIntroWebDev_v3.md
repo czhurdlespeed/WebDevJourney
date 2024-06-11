@@ -430,3 +430,27 @@ Calvin Wetzel
 - Various animation-timing-function are avaiable; you can make your timing custom by using `cubic-bezier()`
   - [More info](https://developer.mozilla.org/en-US/docs/Web/CSS/easing-function)
 - Can do animations with color as well
+
+## Javascript
+
+### Javascript Intro
+
+- `<script></script>` tags allows JavaScript code to load into an HTML page
+- Use `console.log(variable)` to print the contents of `variable` to the console
+
+### Numbers, Strings, and Booleans
+
+- Use template strings for string concatenation/insertion
+
+```javascript
+const sentenceWithTemplate = `Hello ${firstName} ${lastName}! How are you!?`;
+```
+
+- Javascript _does not_ separate integers, floats, etc. Only one type: **Number**
+
+### Control Flow
+
+- typical if else statements
+- Use `=` for assignment
+- Use `===` (three equal signs) to test equality
+- Use `!==` (one exclamation and two equal signs) to test inequality
