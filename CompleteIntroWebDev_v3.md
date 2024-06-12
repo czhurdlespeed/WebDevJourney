@@ -435,7 +435,7 @@ Calvin Wetzel
 
 ### Javascript Intro
 
-- `<script></script>` tags allows JavaScript code to load into an HTML page
+- `<script></script>` tags allows JavaScript code to load into an HTML page; goes in `<body></body>`
 - Use `console.log(variable)` to print the contents of `variable` to the console
 
 ### Numbers, Strings, and Booleans
@@ -454,3 +454,9 @@ const sentenceWithTemplate = `Hello ${firstName} ${lastName}! How are you!?`;
 - Use `=` for assignment
 - Use `===` (three equal signs) to test equality
 - Use `!==` (one exclamation and two equal signs) to test inequality
+
+### Loops
+
+- `Javascript` is single threaded
+- `const` variables cannot be reassigned later
+- `let` variables can be reassigned/changed
