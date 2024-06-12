@@ -527,3 +527,33 @@ const me = {
 console.log(me.name.first);
 console.log(me.location.state);
 ```
+
+### Context
+
+- `this` - references the object based on the scope you are in when you call it
+  - When placed inside an object/class, it is refering to the object that calls the method so that it can then use the object's internals
+
+```javascript
+const me = {
+  name: {
+    first: "Brian",
+    last: "Holt",
+  },
+  location: {
+    streetNumber: 500,
+    street: "Fakestreet",
+    city: "Seattle",
+    state: "WA",
+    zipCode: 55555,
+    country: "USA",
+  },
+  getAddress() {
+    return `${this.name.first} ${this.name.last}
+${this.location.streetNumber} ${this.location.street}
+${this.location.city}, ${this.location.state} ${this.location.zipCode}
+${this.location.country}`;
+  },
+};
+
+console.log(me.getAddress());
+```
