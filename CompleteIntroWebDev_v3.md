@@ -532,6 +532,7 @@ console.log(me.location.state);
 
 - `this` - references the object based on the scope you are in when you call it
   - When placed inside an object/class, it is refering to the object that calls the method so that it can then use the object's internals
+  - Matters how you call it
 
 ```javascript
 const me = {
@@ -557,3 +558,37 @@ ${this.location.country}`;
 
 console.log(me.getAddress());
 ```
+
+### Arrays
+
+- Declared with variable and square brackets `[]`
+  - use `[]` to access element of array
+- Use `.length` to get length of array
+- Use `.push(...)` to append to an array
+- How to `console.log()` elements of an array?
+
+```javascript
+const cities = [
+  "Seattle",
+  "San Francisco",
+  "Salt Lake City",
+  "Amsterdam",
+  "Hong Kong",
+];
+
+// method 1
+for (let i = 0; i < cities.length; i++) {
+  console.log(cities[i]);
+}
+
+// method 2
+cities.forEach(function (city) {
+  console.log(city);
+});
+```
+
+- `forEach` method takes a function and applies it to each element in the array
+
+## Putting It All Together
+
+### The DOM
