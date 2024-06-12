@@ -441,6 +441,7 @@ Calvin Wetzel
 ### Numbers, Strings, and Booleans
 
 - Use template strings for string concatenation/insertion
+- Backticks are used to make template strings; see example below; also allows you to write multiple lines
 
 ```javascript
 const sentenceWithTemplate = `Hello ${firstName} ${lastName}! How are you!?`;
@@ -452,7 +453,12 @@ const sentenceWithTemplate = `Hello ${firstName} ${lastName}! How are you!?`;
 
 - typical if else statements
 - Use `=` for assignment
-- Use `===` (three equal signs) to test equality
+- Use `==` (double equals) to test if same _thing_ but **doesn't** have to be same _type_
+  - 2 + 2 == "4"
+  - False == 0
+- Use `===` (three equal signs) to test equality; tests if same _thing_ **and** same _type_
+  - 2 + 2 === 4
+  - "Hello world 🌎" === "Hello world 🌎"
 - Use `!==` (one exclamation and two equal signs) to test inequality
 
 ### Loops
@@ -460,3 +466,64 @@ const sentenceWithTemplate = `Hello ${firstName} ${lastName}! How are you!?`;
 - `Javascript` is single threaded
 - `const` variables cannot be reassigned later
 - `let` variables can be reassigned/changed
+
+### Functions
+
+- Various ways of writing functions
+
+```javascript
+function bark() {
+  console.log("woof");
+}
+
+const meow = function () {
+  console.log("meeeeeeeow");
+};
+
+// the => is just = > put together, the font just combines them to one glyph
+const chirp = () => {
+  console.log("chirp chirp");
+};
+
+bark();
+meow();
+chirp();
+```
+
+### Builtins
+
+- Look at [MDN](https://developer.mozilla.org/en-US/) for list of **builtins**
+
+### Objects
+
+- Used for collection of methods and variabels that relate to an instance of a class/type
+
+```javascript
+const person = {
+  name: "Brian Holt",
+  city: "Seattle",
+  state: "WA",
+  favoriteFood: "🌮",
+  wantsTacosRightNow: true,
+  numberOfTacosWanted: 100,
+};
+```
+
+- Nest objects within other objects
+  
+```javascript
+const me = {
+  name: {
+    first: "Brian",
+    last: "Holt",
+  },
+  location: {
+    city: "Seattle",
+    state: "WA",
+    country: "USA",
+  },
+};
+
+console.log(me.name.first);
+console.log(me.location.state);
+```
