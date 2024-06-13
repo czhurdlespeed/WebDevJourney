@@ -592,3 +592,5 @@ cities.forEach(function (city) {
 ## Putting It All Together
 
 ### The DOM
+
+- Document Object Model: the way for Javascript to interact and change parts of HTML/CSS.
