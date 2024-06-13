@@ -594,3 +594,15 @@ cities.forEach(function (city) {
 ### The DOM
 
 - Document Object Model: the way for Javascript to interact and change parts of HTML/CSS.
+
+### Events and Listeners
+
+- Events: actions the user takes such as clicking a button or typing something
+- Event Listeners: our reponse to these events; passed a Javascript function
+
+```javascript
+const button = document.querySelector(".event-button");
+button.addEventListener("click", function () {
+  alert("Hey there!");
+});
+```
