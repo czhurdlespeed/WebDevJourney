@@ -606,3 +606,52 @@ button.addEventListener("click", function () {
   alert("Hey there!");
 });
 ```
+
+## Talking to Servers
+
+### JSON
+
+- AJAX: asynchronous JavaaScript and XML
+- JSON: JavaScript Object Notation
+- **JSON Parse**
+
+```javascript
+"{\"name\": \"Luna\",\"age\": 10,\"breed\": \"Havanese\",\"location\": {\"city\":\"Seattle\",\"state\": \"WA\"}}"
+"Luna"
+"Seattle"
+Object {
+  "age": 10,
+  "breed": "Havanese",
+  "location": Object {
+    "city": "Seattle",
+    "state": "WA",
+  },
+  "name": "Luna",
+}
+undefined
+```
+
+- **JSON Stringify**
+
+```javascript
+const dog = {
+  name: "Luna",
+  age: 10,
+  breed: "Havanese",
+  location: {
+    city: "Seattle",
+    state: "WA",
+  },
+};
+
+const objString = JSON.stringify(dog);
+console.log(objString);
+```
+
+### AJAX
+
+- API: application programming interface; a URL that you can make requests to and get information back; a website for machines
+  - API query sends the variables for the response you are searching for
+    - `?zip=98109` or `example.com/weather?zip=98109&day=tomorrow`
+  - `fetch`: builtin function that allows you to give it a URL and then fetches the information from it via an API request; _can do the JSON parsing for you with `json()` function_
+  - `promise`: represents a future value; give it to a function with its then function to run whenever it gets its answer back
