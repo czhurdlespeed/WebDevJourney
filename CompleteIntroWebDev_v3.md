@@ -711,5 +711,3 @@ getName().then(function (name) {
 - `npm install --save-dev` installs the dependencies as development dependencies
 - `npm run build` runs the build script in the `package.json` file
 - `npm run start` runs the start script in the `package.json` file
-
-### Git and GitHub
