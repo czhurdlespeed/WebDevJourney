@@ -4,7 +4,7 @@ This repository contains detailed notes, projects, and code snippets from my web
 
 ## Beginner Learning Path
 
-- [ ] [Complete Intro to Web Development, v3](https://frontendmasters.com/courses/web-development-v3/)
+- [x] [Complete Intro to Web Development, v3](https://frontendmasters.com/courses/web-development-v3/)
 - [ ] [The Odin Project](https://www.theodinproject.com/)
 - [ ] [Interneting is Hard](https://internetingishard.netlify.app/)
 - [ ] [Getting Started with CSS](https://frontendmasters.com/courses/getting-started-css/)
