@@ -699,3 +699,15 @@ getName().then(function (name) {
 - `200` status code means everything is good
 - `404` status code means the page is not found
 - `500` status code means the server is broken
+
+## Other Stuff You Should Know
+
+### Using Third Party Libraries
+
+- Use `npm` to install third party libraries
+- `import { x } from "y";` to import a function from a library
+- npm is a package manager for JavaScript
+- `npm install` installs all the dependencies in the `package.json` file
+- `npm install --save-dev` installs the dependencies as development dependencies
+- `npm run build` runs the build script in the `package.json` file
+- `npm run start` runs the start script in the `package.json` file
