@@ -2,6 +2,8 @@
 
 This repository contains detailed notes, projects, and code snippets from my web development courses and journey. See the track below for where I'm at currently!
 
+Checkout the website [here](https://czhurdlespeed.github.io/WebDevJourney)
+
 Check out my lasest projets:
 
 - [Wordle](ComintroWebProjects/Wordle/index.html)
