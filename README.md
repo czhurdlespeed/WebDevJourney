@@ -9,6 +9,10 @@ Check out my lasest projets:
 - [Checkout Page](ComintroWebProjects/CoffeeCheckout/index.html)
 - [Custom Newspaper](ComintroWebProjects/NewsPaper/index.html)
 
+Notes Collection
+
+- [Complete Intro to Web Dev v3](Notes/CompleteIntroWebDev_v3.md)
+
 ## Beginner Learning Path
 
 - [x] [Complete Intro to Web Development, v3](https://frontendmasters.com/courses/web-development-v3/)
