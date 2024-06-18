@@ -2,6 +2,13 @@
 
 This repository contains detailed notes, projects, and code snippets from my web development courses and journey. See the track below for where I'm at currently!
 
+Check out my lasest projets:
+
+- [Wordle](ComintroWebProjects/Wordle/index.html)
+- [iOS Calculator](ComintroWebProjects/Calculator/index.html)
+- [Checkout Page](ComintroWebProjects/CoffeeCheckout/index.html)
+- [Custom Newspaper](ComintroWebProjects/NewsPaper/index.html)
+
 ## Beginner Learning Path
 
 - [x] [Complete Intro to Web Development, v3](https://frontendmasters.com/courses/web-development-v3/)
