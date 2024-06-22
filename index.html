@@ -3,37 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Development Learning Path</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Add a CSS file if needed -->
+    <title>Calvin Wetzel's Portfolio Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Web Development Learning Path</h1>
-    <p>This repository contains detailed notes, projects, and code snippets from my web development courses and journey. See the track below for where I'm at currently!</p>
-    <h2>Check out my latest projects:</h2>
-    <ul>
-        <li><a href="ComintroWebProjects/Wordle/index.html">Wordle</a></li>
-        <li><a href="ComintroWebProjects/Calculator/index.html">iOS Calculator</a></li>
-        <li><a href="ComintroWebProjects/CoffeeCheckout/index.html">Checkout Page</a></li>
-        <li><a href="ComintroWebProjects/NewsPaper/index.html">Custom Newspaper</a></li>
-    </ul>
-    <h2>Notes Collection</h2>
-    <ul>
-        <li><a href="Notes/CompleteIntroWebDev_v3.html">Complete Intro to Web Dev v3</a></li>
-    </ul>
-    <h2>Beginner Learning Path</h2>
-    <ul>
-        <li><input type="checkbox" checked> <a href="https://frontendmasters.com/courses/web-development-v3/">Complete Intro to Web Development, v3</a></li>
-        <li><input type="checkbox"> <a href="https://www.theodinproject.com/">The Odin Project</a></li>
-        <li><input type="checkbox"> <a href="https://internetingishard.netlify.app/">Interneting is Hard</a></li>
-        <li><input type="checkbox"> <a href="https://frontendmasters.com/courses/getting-started-css/">Getting Started with CSS</a></li>
-        <li><input type="checkbox"> <a href="https://frontendmasters.com/courses/getting-started-javascript-v2/">Getting Started with JavaScript, v2</a></li>
-        <li><input type="checkbox"> <a href="https://frontendmasters.com/courses/css-foundations/">CSS Foundations</a></li>
-        <li><input type="checkbox"> <a href="https://frontendmasters.com/courses/javascript-first-steps/">JavaScript: From First Steps to Professional</a></li>
-        <li><input type="checkbox"> <a href="https://frontendmasters.com/courses/accessibility-v2/">Website Accessibility, v2</a></li>
-    </ul>
-    <h2>Professional Learning Path</h2>
-    <ul>
-        ...
-    </ul>
+    <nav>
+        <ul class="navlist">
+          <li> 
+            <h1> 
+              <a href="index.html"> 
+                <span class="fa-solid fa-computer"> </span> 
+                <span> Calvin Wetzel </span> 
+            </a> 
+            </h1> 
+          </li>
+          <li> <a href="#projects">Projects </a> </li>
+          <li> <a href="about.html">About </a> </li>
+          <li> <a href="#contact">Contact </a> </li>
+          <li> 
+            <a href="https://www.linkedin.com/in/calvinwetzel/" target="_blank"> 
+              <span class="fa-brands fa-linkedin" aria-hidden="true"></span> <span class="sr-only">LinkedIn </span> </a></li>
+          <li> <a href="https://github.com/czhurdlespeed" target="_blank"> <span class="fa-brands fa-github" aria-hidden="true"> </span><span class="sr-only"> Github </span> </a></li>
+          <! --- use dropbox or google drive link for Resume -->
+          <li> <a href="https://drive.google.com/file/d/1_aclh52bohEDvCtdef0NBL0uLaAawJFZ/view?usp=drive_link" target="_blank" class="button">Resume </a> </li>
+        </ul>
+      </nav>
+      
+      <section id="intro"> 
+        <p class="name"> Hi, my name is <span>Calvin Wetzel.</span></p> 
+      
+        <h2>I develop AI technologies.</h2>
+      
+      <p>I'm a Computer Science PhD student at the University of Tennessee specializing in Artificial Intelligence (AI), Machine Learning (ML), Deep Learning (DL), and Computer Vision (CV). </p> 
+      
+      <p>Currently, I'm working with Oak Ridge National Lab's <a href="https://www.ornl.gov/facility/mdf">Manufacturing Demonstration Facility</a> on AI and CV solutions for additive manufacturing techniques.</p>
+      </section>
+
+      <div class="gradient"></div>
+      <div class="projectbackground">
+      <section id="projects">
+        <h2>Project Highlights</h2>
+        <article>
+            <div class="text">
+                <h4>Game Project</h4>
+                <h3>Wordle</h3>
+                <p class="blackbox">In this project, I recreated the game, Wordle. I created the html, css, and used Javascript to send and receive API requests to check if the word is valid or correct. For more 
+                    details and project exploration, click <a href="ComintroWebProjects/Wordle/index.html">here</a>.</p>
+                    <h4>Technologies used include:</h4>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+            </div>
+                <img src="img/Wordle.png" alt="Wordle Game"/>
+            
+        </article>
+        <article class="reverse">
+            <div class="text">
+                <h4>Calculator Project</h4>
+                <h3>iOS Calculator</h3>
+                <p class="blackbox">In this project, I created a web based iOS calculator that can handle integer operations. For more 
+                    details and project exploration, click <a href="ComintroWebProjects/Calculator/index.html">here</a>.</p>
+                    <h4>Technologies used include:</h4>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+            </div>
+                <img src="img/Calculator.png" alt="iOS Calculator"/>
+            
+        </article>
+        <article>
+            <div class="text">
+                <h4>Checkout Page</h4>
+                <h3>Front End Masters Coffee Shop Page</h3>
+                <p class="blackbox">In this project, I created a coffee shop checkout page with input fields and a CSS animation. For more 
+                    details the project exploration, click <a href="ComintroWebProjects/CoffeeCheckout/index.html">here</a>.</p>
+                    <h4>Technologies used include:</h4>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
+            </div>
+                <img src="img/CoffeeCheckout.png" alt="Coffee Shop Landing Page"/>
+            
+        </article>
+    </section>
+      </div>
+
+
+
+
+      <div class="gradient"></div>
+      <div class="section-matteblue">
+      <section id="contact">
+        <h2>Contact me</h2>
+        <p>I'm always interested in hearing about AI technologies and opportunities.</p>
+      <p><a href="mailto:jwetzel2@vols.utk.edu" class="contactbutton">Email me</a></p>
+      </section>
+      </div>
+      <div class="gradient"></div>
+      <footer>
+        <h2> Calvin Wetzel &middot; PhD Student </h2>
+      <ul>
+        <li> 
+          <a href=href="https://www.linkedin.com/in/calvinwetzel/" target="_blank"> 
+            <span class="fab fa-linkedin" aria-hidden="true"></span>            <span class="sr-only">LinkedIn </span> 
+          </a> 
+        </li>
+        <li> 
+          <a href="https://github.com/czhurdlespeed" target="_blank">         <span class="fab fa-github" aria-hidden="true"></span>
+            <span class="sr-only">Github </span>
+            </a>  
+        </li>
+        <li>  
+          <a href="mailto:jwetzel2@vols.utk.edu"> 
+          <span class="fa fa-envelope" aria-hidden="true"></span>
+          <span class="sr-only">Email</span>
+          </a> 
+        </li> 
+       </ul>
+        <p> <small> &copy; 2021 Calvin Wetzel. All rights reserved.</small></p>
+      </footer>
 </body>
 </html>
