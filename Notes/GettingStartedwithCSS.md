@@ -11,4 +11,20 @@ Calvin Wetzel
 - [Font Pair](https://www.fontpair.co/)
 - [CodePen](https://codepen.io/)
 - Off to CodePen...
+
+- CSS Variables
   
+```css
+:root {
+    --black: #171321;
+    --dkblue: #0d314b;
+    --plum: #4b0d49;
+    --hotmag: #ff17e4;
+    --magenta: #e310cb;
+    --aqua: #86fbfb;
+    --white: #f7f8fa;
+    --font-size: 1.3rem;
+    --mono: "Oxygen mono", monospace;
+    --sans: Oxygen, sans-serif;
+}
+```
