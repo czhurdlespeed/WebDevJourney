@@ -4,7 +4,7 @@ This repository contains detailed notes, projects, and code snippets from my web
 
 Checkout the website [here](https://czhurdlespeed.github.io/WebDevJourney)
 
-Check out my lasest projets:
+Check out my lasest projects:
 
 - [Wordle](ComintroWebProjects/Wordle/index.html)
 - [iOS Calculator](ComintroWebProjects/Calculator/index.html)
