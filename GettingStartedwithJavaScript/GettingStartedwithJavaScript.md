@@ -112,4 +112,3 @@ is an interpolated string.
    1. this: references the execution context for that call; determined entirely by how the function was called
    2. Prototypes: how to share methods and properties between objects.
    3. `class` does same thing as prototype style
-
