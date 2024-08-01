@@ -166,3 +166,21 @@ h1 ~ p {
 ## Background
 
 - background-color, background-image, background-size, background-repeat, background-position
+
+## Pseudo-Classes
+
+### Tree-Structured Pseudo-Classes
+
+- `:root`, `:empty`, `:nth-child()`, `:nth-last-child()`, `:first-child`, `:last-child`, `:only-child`
+
+### Hover Pseudo-Classes
+
+- `:hover`, `:active`, `:focus`, `:visited`
+
+## Pseudo-Elements
+
+- `::before`, `::after`, `::placeholder`, `::first-line`, `::first-letter`
+
+## Transition Shorthand
+
+- `transition: property duration timing-function delay;`
