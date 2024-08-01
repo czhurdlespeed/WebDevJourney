@@ -21,7 +21,7 @@ Notes Collection
 - [ ] [Interneting is Hard](https://internetingishard.netlify.app/)
 - [x] [Getting Started with CSS](https://frontendmasters.com/courses/getting-started-css/)
 - [x] [Getting Started with JavaScript, v2](https://frontendmasters.com/courses/getting-started-javascript-v2/)
-- [ ] [CSS Foundations](https://frontendmasters.com/courses/css-foundations/)
+- [x] [CSS Foundations](https://frontendmasters.com/courses/css-foundations/)
 - [ ] [JavaScript: From First Steps to Professional](https://frontendmasters.com/courses/javascript-first-steps/)
 - [ ] [Website Accessibility, v2](https://frontendmasters.com/courses/accessibility-v2/)
 
