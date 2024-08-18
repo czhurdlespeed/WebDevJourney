@@ -1,34 +1,34 @@
 /* variables declared here - these are the colors for our pages, as well as the font stacks and sizes. */
 :root {
-    --black: #171321;
-    --dkblue: #0d314b;
-    --plum: #4b0d49;
-    --hotmag: #ff17e4;
-    --magenta: #e310cb;
-    --aqua: #86fbfb;
-    --white: #f7f8fa;
-    /* My colors */
-    --brightblue: #3054bf;
-    --matteblue: #4c5d73;
-    --blackblue: #0a244a;
-    --lightgreyblue: #7c92a6;
-    --lightred: #d93b58;
-    --hotred: #fc4264;
-    --coolgreen: #03ba93;
-    --hotgreen: #02f0bd;
-    --font-size: 1.3rem;
-    --mono: "Oxygen mono", monospace;
-    --sans: Oxygen, sans-serif;
+  --black: #171321;
+  --dkblue: #0d314b;
+  --plum: #4b0d49;
+  --hotmag: #ff17e4;
+  --magenta: #e310cb;
+  --aqua: #86fbfb;
+  --white: #f7f8fa;
+  /* My colors */
+  --brightblue: #3054bf;
+  --matteblue: #4c5d73;
+  --blackblue: #0a244a;
+  --lightgreyblue: #7c92a6;
+  --lightred: #d93b58;
+  --hotred: #fc4264;
+  --coolgreen: #03ba93;
+  --hotgreen: #02f0bd;
+  --font-size: 1.3rem;
+  --mono: "Oxygen mono", monospace;
+  --sans: Oxygen, sans-serif;
 }
 /* border box model: https://css-tricks.com/box-sizing/ */
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 /* Everything before and everything after universal selector */
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 body {
@@ -41,7 +41,9 @@ body {
   color: var(--white);
   font-size: var(--font-size);
 }
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   margin: 0;
 }
 
@@ -54,21 +56,26 @@ a:hover {
 }
 
 img {
-    width: 100%;
+  width: 100%;
 }
 
 /* background color divs */
 .section-matteblue {
-    background-color: var(--matteblue);
+  background-color: var(--matteblue);
 }
 
 .gradient {
-    background: linear-gradient(90deg, rgba(76,93,115,1) 0%, rgba(134,251,251,1) 50%, rgba(2,240,189,1) 100%);
-    height: 2px;
+  background: linear-gradient(
+    90deg,
+    rgba(76, 93, 115, 1) 0%,
+    rgba(134, 251, 251, 1) 50%,
+    rgba(2, 240, 189, 1) 100%
+  );
+  height: 2px;
 }
 
 .projectbackground {
-    background-color: var(--lightgreyblue);
+  background-color: var(--lightgreyblue);
 }
 /* Intro styles */
 
@@ -114,7 +121,7 @@ img {
 }
 
 #contact p:last-child {
-  margin-top: 3rem
+  margin-top: 3rem;
 }
 
 nav {
@@ -147,12 +154,12 @@ nav [class*="fa-"] {
   color: var(--aqua);
 }
 
-nav h1 [class*='fa-'] {
+nav h1 [class*="fa-"] {
   font-size: 100%;
   color: var(--aqua);
 }
 
-nav a  {
+nav a {
   color: var(--white);
   text-decoration: none;
   /* entire area clickable */
@@ -160,11 +167,11 @@ nav a  {
 }
 
 nav a:hover {
-  color: var(--hotgreen)
+  color: var(--hotgreen);
 }
 
 nav a:hover,
-nav [class*='fa-']:hover {
+nav [class*="fa-"]:hover {
   color: var(--hotgreen);
 }
 
@@ -177,18 +184,17 @@ nav [class*='fa-']:hover {
 }
 
 .contactbutton {
-    background-color: var(--lightred);
-    color: white;
-    padding: 0.5rem;
-    border-radius: 5px;
-    font-family: var(--mono);
-    text-decoration: none;
+  background-color: var(--lightred);
+  color: white;
+  padding: 0.5rem;
+  border-radius: 5px;
+  font-family: var(--mono);
+  text-decoration: none;
 }
 .contactbutton:hover {
-    color: var(--white);
-    background-color: var(--hotred);
+  color: var(--white);
+  background-color: var(--hotred);
 }
-  
 
 .button:hover {
   color: var(--white);
@@ -211,92 +217,97 @@ footer ul {
 }
 
 #projects {
-    padding: 4rem 1rem;
+  padding: 4rem 1rem;
 }
 
 #projects h2 {
-    font-size: 2.5rem;
-    margin-bottom: calc(2.5rem*1.5);
+  font-size: 2.5rem;
+  margin-bottom: calc(2.5rem * 1.5);
 }
 
 #projects h3 {
-    color: var(--aqua);   
+  color: var(--aqua);
 }
 
 #projects h4 {
-    font-size: 1rem;
-    font-family: var(--mono);
-    margin: 0;
+  font-size: 1rem;
+  font-family: var(--mono);
+  margin: 0;
 }
 
 .blackbox {
-    background-color: rgba(17, 58, 140);
-    padding: 1rem;
-    border-radius: 10px;
-    color: var(--white);
-    font-size: 1rem;
-    line-height: 1.5;
+  background-color: rgba(17, 58, 140);
+  padding: 1rem;
+  border-radius: 10px;
+  color: var(--white);
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 #projects ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start;
-    gap: 1rem;
-    font-size: 1rem;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  gap: 1rem;
+  font-size: 1rem;
 }
 
 #projects img {
-   margin: 2rem 0 1rem 0;
-   border-left: 1px solid var(--aqua);
-   border-top: 1px solid var(--aqua);
-   border-radius: 25px;
-   padding: 1rem;
+  margin: 2rem 0 1rem 0;
+  border-left: 1px solid var(--aqua);
+  border-top: 1px solid var(--aqua);
+  border-radius: 25px;
+  padding: 1rem;
 }
 
 @media (min-width: 850px) {
-    article {
-        display: grid;
-        grid-template-columns: repeat(10, 1fr);
-        grid-template-rows: repeat(5, 1fr);
-        gap: 1rem;
-    }
-    #projects img {
-        grid-column: 1/6;
-        grid-row: 1/5;
-    }
-    .text {
-        order: 2;
-        text-align: right;
-        grid-column: 5/11;
-        grid-row: 2/5;
-    }
-    .blackbox {
-        text-align: left;
-    }
-    #projects ul {
-        justify-content: end;
-    }
+  article {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 1rem;
+  }
+  #projects img {
+    grid-column: 1/6;
+    grid-row: 1/5;
+  }
+  .text {
+    order: 2;
+    text-align: right;
+    grid-column: 5/11;
+    grid-row: 2/5;
+  }
+  .blackbox {
+    text-align: left;
+  }
+  #projects ul {
+    justify-content: end;
+  }
 
-    #projects .reverse .text {
-        grid-column: 1/7;
-        grid-row: 2/5;
-        order: 2;
-        text-align: left;
-    }
+  #projects .reverse .text {
+    grid-column: 1/7;
+    grid-row: 2/5;
+    order: 2;
+    text-align: left;
+  }
 
-    #projects .reverse img {
-        grid-column: 6/11;
-        grid-row: 1/5;
-    }
+  #projects .reverse img {
+    grid-column: 6/11;
+    grid-row: 1/5;
+  }
 
-    #projects .reverse ul {
-        justify-content: flex-start;
-    }
+  #projects .reverse ul {
+    justify-content: flex-start;
+  }
 
+  #contact h2,
+  #contact p,
+  #contact .contactbutton {
+    text-align: center;
+  }
 }
 
 @media (min-width: 850px) {
