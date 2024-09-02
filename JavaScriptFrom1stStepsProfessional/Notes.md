@@ -123,3 +123,14 @@
 - `function myfunction() { ... }`
   - parameters must follow variable naming rules
   - will not catch errors if you pass the wrong number of arguments
+- _Arrow Functions_
+  - allows us to create an unnamed/anonymous function without much code
+  - `const myfunction = (parameter1, parameter2) => ...` for implicit return; must be on one line
+  - `const myfunction = (parameter1, parameter2) => { ... }` for multiple lines with explicit return
+
+## Scopes
+
+- Inner scope has access to outer scope but **not** vice versa
+- Global `let` variables can be changed from within a function
+- `const` reference cannot be changed but the object itself can be changed
+  - Ex) `const myobject = {key1: value1, key2: value2}; myobject.key1 = value3;` but myobject cannot be reassigned to a new object
