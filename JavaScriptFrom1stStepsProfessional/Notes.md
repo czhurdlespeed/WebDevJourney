@@ -134,3 +134,19 @@
 - Global `let` variables can be changed from within a function
 - `const` reference cannot be changed but the object itself can be changed
   - Ex) `const myobject = {key1: value1, key2: value2}; myobject.key1 = value3;` but myobject cannot be reassigned to a new object
+
+## [Event Listeners](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)
+
+- **Event Listeners** are functions that listen for a specific event/action to occur.
+  - web browser fires events when certain things happen on a page
+  - we can detect these events using event listeners
+  - `.addEventListener(<event_type>, <function/handler>)` - listen for events on a dome element
+    - parameters: event type, function to run when event occurs
+    - `event` object is passed to function containing info about the event
+    - you can have multiple listeners for the same element and event type
+    - you can capture various attributes of the event object e.g. target, location in viewport, etc.
+
+## Conditionals
+
+- Ternary Operator `condition ? expression1 : expression2`
+- Ex) `let mood = forcast === 'rain' ? 'sad' : 'happy';`
