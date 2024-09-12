@@ -150,3 +150,32 @@
 
 - Ternary Operator `condition ? expression1 : expression2`
 - Ex) `let mood = forcast === 'rain' ? 'sad' : 'happy';`
+
+## Loops
+
+- `for (let i = 0; i < array.length; i++) { ... }`
+  - allows for code repitition across various elements without having to explicitly write out each element; leverage
+- `for (let item of array) { ... }`
+- `for (let char of "ALOHA") { ... }`
+  - strings and arrays are iterables
+
+## map & filter
+
+- process elements of an array
+- `map` - creates a new array with the results of calling a provided function on every element in the array; (want to modify each element)
+- `filter` - creates a new array with all elements that pass the test implemented by the provided function (filter function); (want to select elements that meet a certain condition)
+- backticks are like python f-strings; allow you to insert variables into strings
+
+## Spread
+
+- expands an array into individual elements; think of python tuple unpacking
+- `const newarray = [...array1, ...array2]`
+- Equivalent to `newarray = array1.concat(array2)`
+- `.push` mutates the original array; `concat` does not (returns copy)
+
+## setTimeout
+
+- JS can only do one task at a time (single-threaded)
+- `setTimeout(function, milliseconds)` - executes a function, once, after waiting a specified number of milliseconds; function runs at different time than where it is located in the code
+  - moves to other code while time is counting down
+  - when time is up, function is added to the call stack
