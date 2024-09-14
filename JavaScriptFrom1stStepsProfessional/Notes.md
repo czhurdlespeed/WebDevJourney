@@ -179,3 +179,25 @@
 - `setTimeout(function, milliseconds)` - executes a function, once, after waiting a specified number of milliseconds; function runs at different time than where it is located in the code
   - moves to other code while time is counting down
   - when time is up, function is added to the call stack
+
+## [What the heck is the event loop anyway?](https://www.youtube.com/watch?v=8aGhZQkoFbQ)
+
+- JS Runtime (Stack and Heap)
+  - **Heap** - memory allocation
+  - **Stack** - exectucution context
+    - _one thread == one call stack == one thing at a time_
+  - Errors in console print out the call stack
+  - Calls on the stack that take a while (while loops, api calls) are considered blocking
+- Asynchronous callbacks prevent blocking functions from blocking the call stack
+- Concurrency and Event Loops
+  - Pieces of browser outside of JS runtime (DOM, AJAX, Timers)
+  - **Web APIs** push callbacks to the **task/callback queue**
+    - If stack is empty, **event loop** pushes callback to the stack
+    - You can set the time to zero if you want to defer a function until the stack is empty/clear
+- Renders can't occur while stack has items
+  - Place slow functions asynchonously in the task queue
+  - Permits renders/UI updates to occur while stack is empty (between pushes from the task queue to the stack)
+- **BLUF:** JS is single-threaded so you don't want to block the main thread with slow functions; asynchronous offloads slow functions to the task queue to place them in the stack when it is empty (otherwise, page becomes unresponsive because of slow functions (blocks renders))
+- **Callbacks** are functions that are passed as argumetns to another function. The callback will be called at the appropriate time within the containing function.
+
+## APIs & fetch
