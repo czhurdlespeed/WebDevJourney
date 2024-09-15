@@ -130,7 +130,8 @@
         function getBreedFromURL(url) {
             // The string method .split(char) may come in handy
             // Try to use destructuring as much as you can
-
+            const breed = url.split("/")[4].split("-").reverse().join(" ");
+            return breed;
         }
 
 

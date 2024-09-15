@@ -198,6 +198,32 @@
   - Place slow functions asynchonously in the task queue
   - Permits renders/UI updates to occur while stack is empty (between pushes from the task queue to the stack)
 - **BLUF:** JS is single-threaded so you don't want to block the main thread with slow functions; asynchronous offloads slow functions to the task queue to place them in the stack when it is empty (otherwise, page becomes unresponsive because of slow functions (blocks renders))
-- **Callbacks** are functions that are passed as argumetns to another function. The callback will be called at the appropriate time within the containing function.
+- **Callbacks** are functions that are passed as argumetns to another function to be called at a later time. The callback will be called at the appropriate time within the containing function.
 
 ## APIs & fetch
+
+- **APIs** provide URLs that point at data we care about
+  - `fetch(url)` - lets us use JS to load data from a URL
+    - returns a promise
+    - `.then(response => response.json())` - converts response to JSON
+    - `.then(data => console.log(data))` - logs the data to the console
+- **Promises** are objects that represent the eventual completion (or failure) of an asynchronous operation and its resulting value; promise object contains a state (pending, fulfilled, or rejected) and a value
+  - `.then()` - returns a promise
+  - `.catch()` - returns a promise
+  - `.finally()` - returns a promise
+- **Async/Await** - allows you to write asynchronous code that looks synchronous
+  - `await` forces JS to stop and wait for promise to be _fulfilled_ before moving on; other wise all you have is a pending promise with no data; pretend it is synchronous
+  - `async function myfunction() { ... }`
+  - `const data = await fetch(url);`
+  - `const json = await data.json();`
+  - `console.log(json);`
+
+## Destructuring
+
+- **Destructuring** allows you to extract multiple properties from an object or multiple elements from an array and store them in variables (responses, document, etc.)
+  - `const {key1, key2} = myobject;`
+  - `const [element1, element2] = myarray;`
+  - `const {key1: newkey1, key2: newkey2} = myobject;`
+  - `const {key1 = 'default', key2 = 'default'} = myobject;`
+  - `const [element1, ...rest] = myarray;`
+  - `const [,,element3] = myarray;`
