@@ -227,3 +227,19 @@
   - `const {key1 = 'default', key2 = 'default'} = myobject;`
   - `const [element1, ...rest] = myarray;`
   - `const [,,element3] = myarray;`
+- V8 is the JS engine that powers Chrome and Node.js
+- `document.createElement('tag')` - creates a new element
+
+## Modules
+
+- Let us take a big program and split it up across multiple files
+  - Like python modules
+- `export` and `import` statements
+  - `export {function1, function2, ...}`
+  - `import {function1, function2, ...} from './module.js'`
+- Modules create their own scope
+
+## Debugging
+
+- Keyword `debugger` - pauses code execution (breakpoint) in javascript program; will pause at this line when the browser console is open
+  - Can also click and add a breakpoint in the browser console
