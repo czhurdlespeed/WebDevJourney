@@ -1,3 +1,6 @@
 [submodule "CSSfoundations/fem-css-foundations"]
 	path = CSSfoundations/fem-css-foundations
 	url = https://github.com/czhurdlespeed/fem-css-foundations
+[submodule "WebsiteAccessibilityV2/learn-a11y"]
+	path = WebsiteAccessibilityV2/learn-a11y
+	url = https://github.com/jkup/learn-a11y
