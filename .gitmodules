@@ -4,3 +4,6 @@
 [submodule "WebsiteAccessibilityV2/learn-a11y"]
 	path = WebsiteAccessibilityV2/learn-a11y
 	url = https://github.com/jkup/learn-a11y
+[submodule "IntroReactV8/complete-intro-to-react-v8"]
+	path = IntroReactV8/complete-intro-to-react-v8
+	url = https://github.com/btholt/complete-intro-to-react-v8.git
