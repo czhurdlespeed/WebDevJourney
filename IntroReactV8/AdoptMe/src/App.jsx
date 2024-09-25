@@ -2,6 +2,9 @@
 //   - Components are functions that return elements; components ae reusable and typically
 //      made up of other components
 //   - One way data flow: data flows from parent to child components
+import React from "react";
+import ReactDOM from "react-dom";
+
 const Pet = (props) => {
   // pet component
   return React.createElement("div", {}, [
