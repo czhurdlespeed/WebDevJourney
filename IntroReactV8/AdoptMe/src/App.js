@@ -2,11 +2,11 @@
 //   - Components are functions that return elements; components ae reusable and typically
 //      made up of other components
 //   - One way data flow: data flows from parent to child components
-const Pet = () => { // pet component
+const Pet = (props) => { // pet component
     return React.createElement("div", {}, [ // children
-        React.createElement("h1", {}, "The Baby"),
-        React.createElement("h2", {}, "Dog"),
-        React.createElement("h2", {}, "Hound")
+        React.createElement("h1", {}, props.name),
+        React.createElement("h2", {}, props.animal),
+        React.createElement("h2", {}, props.breed),
     ]);
 };
 // Your code is going to go here
@@ -15,10 +15,24 @@ const App = () => { // App component that returns a div with h1
   return React.createElement(
       "div", // element to create
       {}, // attributes
-      React.createElement("h1", {}, "Adopt Me!"),// children
-      React.createElement(Pet),// children
-      React.createElement(Pet),// children
-      React.createElement(Pet),// children
+      [
+          React.createElement("h1", {}, "Adopt Me!"),// children
+          React.createElement(Pet, {
+            animal: "Dog",
+            name: "Chewbaca",
+            breed: "Hound Dog"
+          }),// children
+          React.createElement(Pet, {
+            animal: "Guinea Pig",
+            name: "Hoggio",
+            breed: "Abyssinian"
+          }),// children
+          React.createElement(Pet, {
+            animal: "Cat",
+            name: "Harrier",
+            breed: "Mixed"
+          }),// children
+      ]
   );
 };
 
