@@ -4,16 +4,8 @@
 //   - One way data flow: data flows from parent to child components
 import React from "react";
 import ReactDOM from "react-dom";
+import Pet from "./Pet";
 
-const Pet = (props) => {
-  // pet component
-  return React.createElement("div", {}, [
-    // children
-    React.createElement("h1", {}, props.name),
-    React.createElement("h2", {}, props.animal),
-    React.createElement("h2", {}, props.breed),
-  ]);
-};
 // Your code is going to go here
 // Always captialize component names
 const App = () => {
