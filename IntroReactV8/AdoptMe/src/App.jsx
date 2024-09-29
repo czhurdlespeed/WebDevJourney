@@ -2,9 +2,8 @@
 //   - Components are functions that return elements; components ae reusable and typically
 //      made up of other components
 //   - One way data flow: data flows from parent to child components
-import ReactDOM from "react-dom";
-import Pet from "./Pet";
-
+import ReactDOM from "react-dom/client";
+import SearchParams from "./SearchParams";
 // Your code is going to go here
 // Always captialize component names
 /*const App = () => {
@@ -38,9 +37,7 @@ const App = () => {
     return (
         <div>
             <h1>Adopt Me!</h1>
-            <Pet animal="Dog" name="Chewbacca" breed="Hound Dog" />
-            <Pet animal="Guinea Pig" name="Hoggio" breed="Abyssinian" />
-            <Pet animal="Cat" name="Harrier" breed="Mixed" />
+            <SearchParams />
         </div>
     );
 }
