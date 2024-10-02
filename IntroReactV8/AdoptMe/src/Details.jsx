@@ -1,6 +1,9 @@
 import { useQuery } from "@tanstack/react-query";
 import { useParams} from "react-router-dom";
 import fetchPet from "./fetchPet";
+import Carousel from "./Carousel";
+
+
 const Details = () => {
     const { id } = useParams(); {/* useParams is a hook that allows you to access the parameters of the current route */}
     const results = useQuery(["details", id], fetchPet); {/* first check if data is in cache with key ["details", id]; if not, fetch it */}
@@ -18,6 +21,7 @@ const Details = () => {
 
     return (
         <div className="details">
+            <Carousel images={pet.images} />
             <div>
                 <h1>{pet.name}</h1>
                 <h2>{`${pet.animal} - ${pet.breed} - ${pet.city}, ${pet.state}`}</h2>
